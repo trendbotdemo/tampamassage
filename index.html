@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Massage Hotel | Bespoke In-Room Hotel Spa Services</title>
+    <meta name="description" content="Experience ultimate relaxation with Tampa Massage Hotel. Premier in-room massage therapy, deep tissue, Swedish, and sports recovery delivered to your hotel suite in Tampa, FL.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Background Orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Canvas for Floating Particle Animation -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-spa"></i></span>
+                <span class="logo-text">Tampa Massage <span class="accent-text">Hotel</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary nav-btn-mobile">Book Session</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-btn-desktop">
+                    <span>Book Session</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Modern High-Impact Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <!-- Hero Text Side -->
+                <div class="hero-content reveal-left">
+                    <div class="hero-badge-pill">
+                        <span class="badge-icon"><i class="fa-solid fa-crown"></i></span>
+                        <span>TAMPA'S PREMIER HOTEL SPA</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Unwind in Luxury. <br>
+                        <span class="gradient-text">Massages Delivered</span> <br>
+                        To Your Suite.
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Experience five-star resort spa bodywork without leaving the comfort of your room. Licensed, elite therapists delivering customized deep tissue, Swedish, and recovery therapies 24/7 across Tampa.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-lg btn-primary pulse-btn">
+                            <span>Reserve Your Session</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="btn btn-lg btn-outline">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-quick-stats">
+                        <div class="quick-stat-item">
+                            <span class="stat-val">45<small>min</small></span>
+                            <span class="stat-lbl">Express Arrival</span>
+                        </div>
+                        <div class="quick-stat-divider"></div>
+                        <div class="quick-stat-item">
+                            <span class="stat-val">100<small>%</small></span>
+                            <span class="stat-lbl">Licensed LMTs</span>
+                        </div>
+                        <div class="quick-stat-divider"></div>
+                        <div class="quick-stat-item">
+                            <span class="stat-val">5.0<small>★</small></span>
+                            <span class="stat-lbl">Top Rated Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Side (High Impact Layered Card) -->
+                <div class="hero-visual-side reveal-right">
+                    <div class="hero-image-card">
+                        <div class="hero-img-glow-ring"></div>
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=900" alt="Luxury In-Room Massage Experience" class="hero-side-img">
+                        <div class="hero-img-overlay"></div>
+
+                        <!-- Floating Glass Card 1 (Top Left) -->
+                        <div class="hero-floating-glass glass-top-left float-animation">
+                            <div class="glass-icon-box"><i class="fa-solid fa-bell-concierge"></i></div>
+                            <div class="glass-text-box">
+                                <span class="glass-title">In-Suite Setup</span>
+                                <span class="glass-sub">Heated Table & Organic Oils</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Card 2 (Bottom Right) -->
+                        <div class="hero-floating-glass glass-bottom-right float-animation-delayed">
+                            <div class="glass-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="glass-title">2,500+ Tampa Guests</span>
+                            <span class="glass-sub">Downtown • Westshore • Airport</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal-up" data-delay="0.1">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="0.2">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label">Massages Completed</div>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="0.3">
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label">Hotel Partners</div>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="0.4">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-suffix">%</div>
+                        <div class="stat-label">Satisfaction Guaranteed</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="section-subtitle">THE TAMPA MASSAGE HOTEL DIFFERENCE</span>
+                    <h2 class="section-title">Elevating In-Room Wellness to an <span class="gradient-text">Art Form</span></h2>
+                    <p class="section-description">
+                        We bring the serene atmosphere and premium treatment quality of world-class resort spas directly into the intimacy and comfort of your hotel room or suite.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-column reveal-left">
+                        <div class="about-img-frame">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=800" alt="Serene Spa Environment" class="about-img main-img">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=600" alt="Massage Oil Prep" class="about-img secondary-img">
+                            <div class="experience-badge">
+                                <span class="exp-years">24/7</span>
+                                <span class="exp-text">On-Demand Service</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-column reveal-right">
+                        <div class="about-tab-header">
+                            <button class="tab-btn active" data-tab="sanctuary">Sanctuary Delivery</button>
+                            <button class="tab-btn" data-tab="therapists">Elite Therapists</button>
+                            <button class="tab-btn" data-tab="customization">Bespoke Oils</button>
+                        </div>
+
+                        <div class="about-tab-content active" id="tab-sanctuary">
+                            <h3>Complete Mobile Spa Setup Included</h3>
+                            <p>
+                                Our therapists arrive equipped with high-grade portable heated massage tables, ultra-soft Egyptian cotton linens, soothing aromatherapy diffusers, and curated ambient soundscapes.
+                            </p>
+                            <ul class="about-checklist">
+                                <li><i class="fa-solid fa-circle-check"></i> Discreet and punctual arrival at your hotel room door</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Fresh, sanitized linens & warm towel treatments</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Customized lighting and soothing auditory background</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-tab-content" id="tab-therapists">
+                            <h3>Licensed, Certified & Vetted Professionals</h3>
+                            <p>
+                                Every massage therapist on our team undergoes rigorous background checks, extensive technique evaluations, and specialized hotel etiquette training to ensure safety and luxury.
+                            </p>
+                            <ul class="about-checklist">
+                                <li><i class="fa-solid fa-circle-check"></i> Florida State Licensed Massage Therapists (LMT)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Trained in Deep Tissue, Sports & Neuromuscular Therapies</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Uncompromising professionalism and client confidentiality</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-tab-content" id="tab-customization">
+                            <h3>Organic Botanical Essential Oils</h3>
+                            <p>
+                                Personalize your treatment with our handcrafted lavender, eucalyptus, rosehip, and sandalwood essential oil blends designed to ease muscular tension and quiet the mind.
+                            </p>
+                            <ul class="about-checklist">
+                                <li><i class="fa-solid fa-circle-check"></i> 100% Organic, hypoallergenic plant-based carrier oils</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Custom pressure levels tailored to your physical condition</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Herbal hot compress additions for deep muscle relaxation</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-cta-row">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Schedule an In-Room Massage</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refined Services Section (3 Core Services) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="section-subtitle">CURATED TREATMENT MENU</span>
+                    <h2 class="section-title">Indulgent <span class="gradient-text">Massage Services</span></h2>
+                    <p class="section-description">
+                        Select from our signature therapies tailored specifically for hotel guests and travelers seeking rejuvenation in Tampa.
+                    </p>
+                </div>
+
+                <div class="services-grid services-3-col">
+                    <!-- Service 1: Deep Tissue -->
+                    <div class="service-card reveal-up" data-delay="0.1">
+                        <div class="card-badge">Popular</div>
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600" alt="Deep Tissue Massage">
+                            <div class="service-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-meta">
+                                <span class="duration"><i class="fa-regular fa-clock"></i> 60 / 90 / 120 Min</span>
+                                <span class="price">From $140</span>
+                            </div>
+                            <h3 class="service-title">Deep Tissue & Muscle Reset</h3>
+                            <p class="service-desc">
+                                Target chronic muscle tightness, knot points, and travel fatigue with firm, slow strokes and targeted pressure points.
+                            </p>
+                            <ul class="service-benefits">
+                                <li><i class="fa-solid fa-check"></i> Targets deep muscle layers</li>
+                                <li><i class="fa-solid fa-check"></i> Relieves flight & travel stiffness</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-service-book" data-service="Deep Tissue Massage">
+                                <span>Book This Treatment</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Swedish Relaxation -->
+                    <div class="service-card reveal-up" data-delay="0.2">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=600" alt="Swedish Relaxation">
+                            <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-meta">
+                                <span class="duration"><i class="fa-regular fa-clock"></i> 60 / 90 / 120 Min</span>
+                                <span class="price">From $120</span>
+                            </div>
+                            <h3 class="service-title">Signature Swedish Relaxation</h3>
+                            <p class="service-desc">
+                                A gentle, flowing full-body massage designed to boost circulation, calm the nervous system, and induce deep sleep.
+                            </p>
+                            <ul class="service-benefits">
+                                <li><i class="fa-solid fa-check"></i> Soothing light-to-medium pressure</li>
+                                <li><i class="fa-solid fa-check"></i> Enhances sleep quality & stress relief</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-service-book" data-service="Swedish Relaxation Massage">
+                                <span>Book This Treatment</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Sports & Athletic Recovery -->
+                    <div class="service-card reveal-up" data-delay="0.3">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=600" alt="Sports & Athletic Recovery">
+                            <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-meta">
+                                <span class="duration"><i class="fa-regular fa-clock"></i> 60 / 90 Min</span>
+                                <span class="price">From $150</span>
+                            </div>
+                            <h3 class="service-title">Athletic & Golf Recovery</h3>
+                            <p class="service-desc">
+                                Specialized stretching, active release, and percussion therapy tailored for golfers, runners, and active individuals in Tampa.
+                            </p>
+                            <ul class="service-benefits">
+                                <li><i class="fa-solid fa-check"></i> Assisted mobility & stretching</li>
+                                <li><i class="fa-solid fa-check"></i> Reduces soreness & fatigue</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-service-book" data-service="Sports & Athletic Recovery">
+                                <span>Book This Treatment</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / How It Works Section -->
+        <section id="experience" class="how-it-works-section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="section-subtitle">EFFORTLESS & SEAMLESS</span>
+                    <h2 class="section-title">How Your In-Room Spa <span class="gradient-text">Works</span></h2>
+                    <p class="section-description">
+                        From reservation to ultimate relaxation in 4 simple steps.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card reveal-up" data-delay="0.1">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Reserve Online or Call</h3>
+                        <p>Select your treatment, duration, preferred time, and hotel location via our fast online form or 24/7 hotline.</p>
+                    </div>
+
+                    <div class="step-card reveal-up" data-delay="0.2">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                        <h3>Therapist Arrival</h3>
+                        <p>Your licensed therapist arrives punctually with a full professional table, linens, music, and aromatics.</p>
+                    </div>
+
+                    <div class="step-card reveal-up" data-delay="0.3">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fa-solid fa-hot-tub-person"></i></div>
+                        <h3>Indulge & Unwind</h3>
+                        <p>Relax in the privacy of your own suite while receiving world-class therapeutic bodywork.</p>
+                    </div>
+
+                    <div class="step-card reveal-up" data-delay="0.4">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="fa-solid fa-moon"></i></div>
+                        <h3>Sleep & Renew</h3>
+                        <p>When the session concludes, drift straight into a deep restful sleep without needing to travel back from a spa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="section-subtitle">GUEST REVIEWS</span>
+                    <h2 class="section-title">Loved by Hotel Guests & <span class="gradient-text">Travelers</span></h2>
+                    <p class="section-description">
+                        Read what luxury hotel guests in Downtown Tampa, Westshore, and Tampa Bay have to say.
+                    </p>
+                </div>
+
+                <div class="testimonials-slider-container reveal-up">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Staying at the EDITION in Tampa for a business conference and had intense back stiffness. Tampa Massage Hotel had a therapist at my door within 45 minutes. Absolutely world-class Deep Tissue session!"
+                        </p>
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Sarah M.">
+                            </div>
+                            <div class="author-details">
+                                <span class="author-name">Sarah Jenkins</span>
+                                <span class="author-title">Guest at The Tampa EDITION</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Booked a Swedish session after a long flight at the JW Marriott Downtown. The attention to detail, soothing lavender oils, and incredible massage skills made my evening completely restorative."
+                        </p>
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Marcus V.">
+                            </div>
+                            <div class="author-details">
+                                <span class="author-name">Marcus Vance</span>
+                                <span class="author-title">Guest at JW Marriott Tampa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The convenience of having a top-tier therapist setup right in my room after a long flight from London was priceless. Professional, clean, courteous, and incredibly relaxing."
+                        </p>
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" alt="David L.">
+                            </div>
+                            <div class="author-details">
+                                <span class="author-name">David Linwood</span>
+                                <span class="author-title">Executive Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Reservation Form Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-column reveal-left">
+                        <span class="section-subtitle">RESERVE YOUR SANCTUARY</span>
+                        <h2 class="section-title">Book Your In-Room <br><span class="gradient-text">Massage Today</span></h2>
+                        <p class="contact-desc">
+                            Have questions or ready to book? Fill out our instant reservation form, or reach out directly to our concierge team available 24/7.
+                        </p>
+
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="c-detail">
+                                    <span class="c-label">Direct Concierge Hotline</span>
+                                    <a href="tel:8135550199" class="c-val">(813) 555-0199</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-detail">
+                                    <span class="c-label">Email Reservations</span>
+                                    <a href="mailto:book@tampamassagehotel.com" class="c-val">book@tampamassagehotel.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-detail">
+                                    <span class="c-label">Service Territory</span>
+                                    <span class="c-val">Tampa, Downtown, Westshore, Ybor, & Surrounding Bay Area</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hours-badge">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Operating Hours:</strong> 24 Hours / 7 Days a Week
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-column reveal-right">
+                        <div class="glass-form-wrapper">
+                            <h3>Instant Reservation Request</h3>
+                            <form id="booking-form" class="booking-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name"><i class="fa-regular fa-user"></i> Full Name *</label>
+                                        <input type="text" id="name" required placeholder="e.g. Eleanor Vance">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+                                        <input type="tel" id="phone" required placeholder="(813) 000-0000">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email"><i class="fa-regular fa-envelope"></i> Email Address *</label>
+                                        <input type="email" id="email" required placeholder="name@domain.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="hotel"><i class="fa-solid fa-hotel"></i> Hotel Name & Room # *</label>
+                                        <input type="text" id="hotel" required placeholder="JW Marriott Tampa #812">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="service-select"><i class="fa-solid fa-spa"></i> Desired Treatment *</label>
+                                        <select id="service-select" required>
+                                            <option value="">Select Treatment...</option>
+                                            <option value="Deep Tissue & Muscle Reset">Deep Tissue & Muscle Reset ($140+)</option>
+                                            <option value="Signature Swedish Relaxation">Signature Swedish Relaxation ($120+)</option>
+                                            <option value="Athletic & Golf Recovery">Athletic & Golf Recovery ($150+)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="duration-select"><i class="fa-regular fa-clock"></i> Duration *</label>
+                                        <select id="duration-select" required>
+                                            <option value="60 Minutes">60 Minutes</option>
+                                            <option value="90 Minutes" selected>90 Minutes (Recommended)</option>
+                                            <option value="120 Minutes">120 Minutes</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="booking-date"><i class="fa-regular fa-calendar"></i> Preferred Date *</label>
+                                        <input type="date" id="booking-date" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="booking-time"><i class="fa-regular fa-clock"></i> Preferred Time *</label>
+                                        <input type="time" id="booking-time" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="notes"><i class="fa-regular fa-comment-dots"></i> Special Requests or Muscle Focus Areas</label>
+                                    <textarea id="notes" rows="3" placeholder="e.g. Focus on lower back tightness, preferred pressure, fragrance preferences..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <span>Send Reservation Request</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon"><i class="fa-solid fa-spa"></i></span>
+                        <span class="logo-text">Tampa Massage <span class="accent-text">Hotel</span></span>
+                    </a>
+                    <p class="footer-quote">
+                        "Bringing the resort spa experience straight to your hotel doorstep. Pure tranquility, renewed energy."
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                        <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services Menu</a></li>
+                            <li><a href="#experience">How It Works</a></li>
+                            <li><a href="#testimonials">Reviews</a></li>
+                            <li><a href="#contact">Book Now</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Deep Tissue Massage</a></li>
+                            <li><a href="#services">Swedish Relaxation</a></li>
+                            <li><a href="#services">Golf & Sports Recovery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Tampa Area Coverage</h4>
+                        <ul>
+                            <li>Downtown Tampa & Riverwalk</li>
+                            <li>Westshore Business District</li>
+                            <li>Historic Ybor City</li>
+                            <li>Tampa International Airport Hotels</li>
+                            <li>South Tampa & Hyde Park</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tampa Massage Hotel. All rights reserved. Licensed & Insured Mobile Massage Service.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Booking Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:8135550199" class="mobile-bar-btn btn-call" aria-label="Call Hotline">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call 24/7</span>
+        </a>
+        <a href="#contact" class="mobile-bar-btn btn-book">
+            <span>Book In-Room Massage</span>
+            <i class="fa-solid fa-calendar-check"></i>
+        </a>
+    </div>
+
+    <!-- Toast Notification Popup -->
+    <div id="toast-notification" class="toast-notification">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-message">
+            <span class="toast-title" id="toast-title">Request Received!</span>
+            <span class="toast-desc" id="toast-desc">Our concierge will contact you within 15 minutes.</span>
+        </div>
+    </div>
+
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
