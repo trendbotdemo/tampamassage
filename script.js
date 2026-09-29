@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Tampa Massage Hotel - Sleek Interactive JavaScript
+   Tampa Hotel Massage - Sleek Interactive JavaScript
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
